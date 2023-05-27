@@ -64,7 +64,7 @@ class Lecturer(Mentor):
     #         if isinstance(other, Lecturer):
     #             avrall[course] = (self.avr() + other.avr()) / 2
     #     return avrall
-#  ПОПЫТАЛАСЬ СДЕЛАТЬ ПОДСЧЕТ СРЕДНЕЙ ОЦЕНКИ ПО ОДНОМУ КУРСУ - НЕ ПОЛУЧИЛОСЬ
+
 
 class Reviewer(Mentor):
     def __init__(self, name, surname):
@@ -84,9 +84,9 @@ class Reviewer(Mentor):
         return res
 
 
-# Проверка работы кода = реализация всех методов:
+#### Проверка работы кода = реализация всех методов:
 
-# выставление оценок лекторам студентами и стедентам экспертами
+#### выставление оценок лекторам студентами и стедентам экспертами
 
 
 first_student = Student('Ruoy', 'Eman', 'boy')
@@ -155,7 +155,7 @@ second_student.grade_2mentor(bad_lecturer, 'Java', 4)
 print(f'Оценки крутого лектора: {cool_lecturer.grades_from_students}')
 print(f'Оценки плохого лектора: {bad_lecturer.grades_from_students}')
 
-# вывести str() для всех классов
+#### вывести str() для всех классов
 
 print(first_student)
 print(second_student)
@@ -164,13 +164,11 @@ print(bad_mentor)
 print(cool_lecturer)
 print(bad_lecturer)
 
-# сравнение лекторов и студентов по средним баллам
+#### сравнение лекторов и студентов по средним баллам
 
 print(first_student.__lt__(second_student))
 print(second_student.__lt__(first_student))
 
 print(cool_lecturer.__lt__(bad_lecturer))
 print(bad_lecturer.__lt__(cool_lecturer))
-
-# подсчет средней оценки по всем студентам и лекторам
 
